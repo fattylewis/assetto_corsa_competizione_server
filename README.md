@@ -1,6 +1,11 @@
 This builds an ACC server. All you need to do to use this is point the container to where you have the ACC dedicated server binary.
+The layout should be:
 
-
+```
+/opt/server
+├── accServer.exe
+├── cfg
+```
 
 None of the variables are required as sane defaults have been applied. The defaults have been taken from the server admin manual.
 
