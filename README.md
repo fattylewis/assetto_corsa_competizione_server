@@ -1,4 +1,4 @@
-This builds a self-contained ACC server. Everything required to run the server is included in this server (provided you build it with the server.)
+This builds an ACC server. All you need to do to use this is point the container to where you have the ACC dedicated server binary.
 
 
 
@@ -164,11 +164,11 @@ Default: 0
 
 
 ```
-docker run --name accServer -e ACC_SERVER_NAME="Docker Dev" \
--e ADMIN_PASS=blahblah \
--e TRACK=donington_2019 \
--e PREM_DISCONNECT=0
-jon/acc-server
+docker run --name acc-standalone \
+-e ACC_SERVER_NAME="ACC Docker Server" \
+-e TRACK=monza -e PREM_DISCONNECT=0 \
+-v /opt/server:/opt/server \
+fattylewis/assetto_corsa_competizione_server
 ```
 
 
