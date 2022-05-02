@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:18.08
 
 
 RUN dpkg --add-architecture i386 && \
